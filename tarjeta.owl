@@ -219,6 +219,17 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria">
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria"/>
+        <rdfs:comment xml:lang="es">La parada del medio de transporte pertenece a una zona tarifaria.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
+        <rdfs:label xml:lang="es">corona tarifaria</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada">
@@ -253,6 +264,17 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propiedad inversa de tiene parada.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
         <rdfs:label xml:lang="es">Línea a la que pertenece una parada</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador">
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador"/>
+        <rdfs:comment xml:lang="es">El medio de transporte es gestionado por determinado operador.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
+        <rdfs:label xml:lang="es">operador</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -791,6 +813,17 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</rdfs:com
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador">
+        <rdfs:comment rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
+        <rdfs:comment xml:lang="es">Operador de los medios de transporte</rdfs:comment>
+        <rdfs:comment xml:lang="es">Operador de los medios de transporte.</rdfs:comment>
+        <rdfs:label xml:lang="es">Operador</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias">
@@ -819,6 +852,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</rdfs:com
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus">
         <rdfs:subClassOf rdf:resource="http://transport.data.gov.uk/def/naptan/BusStop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria">
+        <rdfs:comment rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
+        <rdfs:comment xml:lang="es">Zona que permite definir la tarifa del sistema de transporte.</rdfs:comment>
+        <rdfs:label xml:lang="es">Zona Tarifaria</rdfs:label>
     </owl:Class>
     
 
