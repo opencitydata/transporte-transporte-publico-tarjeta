@@ -1,0 +1,756 @@
+@prefix : <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> rdf:type owl:Ontology ;
+                                                                                      owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta_v0.1> ;
+                                                                                      owl:imports <http://www.w3.org/ns/sosa/> ;
+                                                                                      <http://purl.org/dc/elements/1.1/contributor> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
+                                                                                      <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid and Localidata)"^^xsd:string ;
+                                                                                      <http://purl.org/dc/elements/1.1/date> "2018-06-04"^^xsd:date ;
+                                                                                      <http://purl.org/dc/terms/rights> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                                                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta"^^xsd:string ;
+                                                                                      rdfs:comment "Vocabulario para la representación de los datos de la validación de la tarjeta de transporte público."@es ,
+                                                                                                   "Vocabulary to represent the card validation of the public transport."@en ;
+                                                                                      rdfs:label "Validación de tarjeta"@es ,
+                                                                                                 "Card validation"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#gmlLiteral
+<http://www.opengis.net/ont/geosparql#gmlLiteral> rdf:type rdfs:Datatype ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      A GML serialization of a geometry object.
+    """@en ;
+                                                  rdfs:comment """
+      A GML serialization of a geometry object.
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "GML Literal"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      A GML serialization of a geometry object.
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "GML Literal"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type rdfs:Datatype ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      A Well-known Text serialization of a geometry object.
+    """@en ;
+                                                  rdfs:comment """
+      A Well-known Text serialization of a geometry object.
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "Well-known Text Literal"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      A Well-known Text serialization of a geometry object.
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Well-known Text Literal"@en .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://transport.data.gov.uk/def/naptan/compassPointBearing
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/mainNptgLocality
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/metro
+<http://transport.data.gov.uk/def/naptan/metro> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/replacement
+<http://transport.data.gov.uk/def/naptan/replacement> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/station
+<http://transport.data.gov.uk/def/naptan/station> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopArea
+<http://transport.data.gov.uk/def/naptan/stopArea> rdf:type owl:ObjectProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopPoint
+<http://transport.data.gov.uk/def/naptan/stopPoint> rdf:type owl:ObjectProperty ;
+                                                    rdfs:range <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopValidity
+<http://transport.data.gov.uk/def/naptan/stopValidity> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:subPropertyOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria> ;
+                                                                                             rdfs:comment "La parada del medio de transporte pertenece a una zona tarifaria."@es ;
+                                                                                             rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                                                                                             rdfs:label "corona tarifaria"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> rdf:type owl:ObjectProperty ;
+                                                                                                 rdfs:range [ rdf:type owl:Class ;
+                                                                                                              owl:unionOf ( <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena>
+                                                                                                                            <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias>
+                                                                                                                            <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro>
+                                                                                                                            <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero>
+                                                                                                                          )
+                                                                                                            ] .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> rdf:type owl:ObjectProperty ;
+                                                                                   owl:inverseOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> ;
+                                                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                                                 owl:unionOf ( <http://transport.data.gov.uk/def/naptan/StopArea>
+                                                                                                               <http://transport.data.gov.uk/def/naptan/StopPoint>
+                                                                                                             )
+                                                                                               ] ;
+                                                                                   rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> ;
+                                                                                   <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                                                                                   rdfs:comment "Propiedad inversa de tiene parada."^^xsd:string ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                                                                                   rdfs:label "Línea a la que pertenece una parada"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> ;
+                                                                                      rdfs:comment "El medio de transporte es gestionado por determinado operador."@es ;
+                                                                                      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                                                                                      rdfs:label "operador"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf <http://transport.data.gov.uk/def/naptan/stopArea> ,
+                                                                                                       <http://transport.data.gov.uk/def/naptan/stopPoint> ;
+                                                                                    rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> ;
+                                                                                    rdfs:range [ rdf:type owl:Class ;
+                                                                                                 owl:unionOf ( <http://transport.data.gov.uk/def/naptan/StopArea>
+                                                                                                               <http://transport.data.gov.uk/def/naptan/StopPoint>
+                                                                                                             )
+                                                                                               ] ;
+                                                                                    <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                                                                                    rdfs:comment "Parada que pertenece a una línea"@es ;
+                                                                                    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                                                                                    rdfs:label "parada"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> ;
+                                                                                              rdfs:domain [ rdf:type owl:Class ;
+                                                                                                            owl:unionOf ( <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena>
+                                                                                                                          <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias>
+                                                                                                                          <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro>
+                                                                                                                          <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero>
+                                                                                                                        )
+                                                                                                          ] .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador> rdf:type owl:ObjectProperty ;
+                                                                                                    rdfs:subPropertyOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:subPropertyOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile
+:profile rdf:type owl:ObjectProperty ;
+         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+         rdfs:comment "Perfil de usuario de la tarjeta (normal, joven, tercera edad, etc.) Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil"@es ,
+                      "User's profile. It is represented by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil"@en ;
+         rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+         rdfs:label "perfil"@es ,
+                    "profile"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#title
+:title rdf:type owl:ObjectProperty ;
+       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+       rdfs:comment "Card's title. It can be anual, mensual, touristic, etc. It is represented by the scheme concept: http://vocab.linkeddata.es/datosabiertos/kos/transporte/titulo"@en ,
+                    "Título que contiene la tarjeta de transporte (anual, 30 días, familias numerosas, etc.) Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/titulo"@es ;
+       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+       rdfs:label "title"@en ,
+                  "título"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType
+:validationType rdf:type owl:ObjectProperty ;
+                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                rdfs:comment "El tipo de validación que se aplica a la tarjeta. Los tipos pueden ser: abono, multiviaje o sencillo. Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"@es ,
+                             """The type of validation applied to the card. It is represented by the scheme concept: 
+http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"""@en ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+                rdfs:label "tipo de validación"@es ,
+                           "validation type"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#defaultGeometry
+<http://www.opengis.net/ont/geosparql#defaultGeometry> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                                                       rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                   rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                   <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                                   <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                   <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                   <http://purl.org/dc/elements/1.1/description> """
+      A spatial representation for a given feature.
+    """@en ;
+                                                   rdfs:comment """
+      A spatial representation for a given feature.
+    """@en ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                    <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                   rdfs:label "hasGeometry"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> """
+      A spatial representation for a given feature.
+    """@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "hasGeometry"@en .
+
+
+###  http://www.w3.org/ns/ssn/forProperty
+<http://www.w3.org/ns/ssn/forProperty> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/ssn/hasProperty
+<http://www.w3.org/ns/ssn/hasProperty> rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf <http://www.w3.org/ns/ssn/isPropertyOf> ;
+                                       rdfs:comment "Relation between an entity and a Property of that entity."@en ;
+                                       rdfs:isDefinedBy <http://www.w3.org/ns/ssn/> ;
+                                       rdfs:label "has property"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Relation between an entity and a Property of that entity."@en .
+
+
+###  http://www.w3.org/ns/ssn/isPropertyOf
+<http://www.w3.org/ns/ssn/isPropertyOf> rdf:type owl:ObjectProperty ;
+                                        rdfs:comment "Relation between a Property and the entity it belongs to."@en ;
+                                        rdfs:isDefinedBy <http://www.w3.org/ns/ssn/> ;
+                                        rdfs:label "is property of"@en ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Property and the entity it belongs to."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#asGML
+<http://www.opengis.net/ont/geosparql#asGML> rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> ;
+                                             rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                             rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral> ;
+                                             <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                             <http://purl.org/dc/elements/1.1/description> """
+      The GML serialization of a geometry
+    """@en ;
+                                             rdfs:comment """
+      The GML serialization of a geometry
+    """@en ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                              <http://www.opengis.net/spec/geosparql/1.0> ;
+                                             rdfs:label "asGML"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> """
+      The GML serialization of a geometry
+    """@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "asGML"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> ;
+                                             rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                             rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                             <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                             <http://purl.org/dc/elements/1.1/description> """
+      The WKT serialization of a geometry
+    """@en ;
+                                             rdfs:comment """
+      The WKT serialization of a geometry
+    """@en ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                              <http://www.opengis.net/spec/geosparql/1.0> ;
+                                             rdfs:label "asWKT"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> """
+      The WKT serialization of a geometry
+    """@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "asWKT"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#coordinateDimension
+<http://www.opengis.net/ont/geosparql#coordinateDimension> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/geosparql#dimension
+<http://www.opengis.net/ont/geosparql#dimension> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/geosparql#hasSerialization
+<http://www.opengis.net/ont/geosparql#hasSerialization> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                        rdfs:range rdfs:Literal ;
+                                                        <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                                        <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                        <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                        <http://purl.org/dc/elements/1.1/description> """
+      Connects a geometry object with its text-based serialization.
+    """@en ;
+                                                        rdfs:comment """
+      Connects a geometry object with its text-based serialization.
+    """@en ;
+                                                        rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                         <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                        rdfs:label "has serialization"@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> """
+      Connects a geometry object with its text-based serialization.
+    """@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "has serialization"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#isEmpty
+<http://www.opengis.net/ont/geosparql#isEmpty> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/geosparql#isSimple
+<http://www.opengis.net/ont/geosparql#isSimple> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/geosparql#spatialDimension
+<http://www.opengis.net/ont/geosparql#spatialDimension> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://transport.data.gov.uk/def/naptan/BusCoachStopPoint
+<http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint
+<http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusStop
+<http://transport.data.gov.uk/def/naptan/BusStop> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ,
+                                                                  <http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> ;
+                                                  rdfs:comment "A bus, coach or tram stop"@en ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "Bus Stop"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CustomBusStop
+<http://transport.data.gov.uk/def/naptan/CustomBusStop> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/FlexibleBusStop
+<http://transport.data.gov.uk/def/naptan/FlexibleBusStop> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/HailAndRideBusStop
+<http://transport.data.gov.uk/def/naptan/HailAndRideBusStop> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/MarkedBusStop
+<http://transport.data.gov.uk/def/naptan/MarkedBusStop> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/MetroStopPoint
+<http://transport.data.gov.uk/def/naptan/MetroStopPoint> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> ;
+                                                         rdfs:comment "A metro, tram or underground station PTAN."@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Metro Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/OffStreetStopPoint
+<http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/OnStreetStopPoint
+<http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailAccessArea
+<http://transport.data.gov.uk/def/naptan/RailAccessArea> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailPlatform
+<http://transport.data.gov.uk/def/naptan/RailPlatform> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailStationEntrance
+<http://transport.data.gov.uk/def/naptan/RailStationEntrance> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailStopPoint
+<http://transport.data.gov.uk/def/naptan/RailStopPoint> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> ;
+                                                        rdfs:comment "A railway station PTAN."@en ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Rail Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopArea
+<http://transport.data.gov.uk/def/naptan/StopArea> rdf:type owl:Class .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopPoint
+<http://transport.data.gov.uk/def/naptan/StopPoint> rdf:type owl:Class ;
+                                                    rdfs:comment "A NaPTAN stop definition."@en ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ,
+                                                                                                     <http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> ;
+                                                                                     owl:disjointWith <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> ,
+                                                                                                      <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> ;
+                                                                                     <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                                                                                     rdfs:comment "Tipo de parada de autobús. Este tipo de paradas se encuentran dentro de los intercambiadores o estaciones de autobús"^^xsd:string ;
+                                                                                     rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                                                                                     rdfs:label "Dársena"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> rdf:type owl:Class ;
+                                                                                   <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                                                                                   rdfs:comment "Son las líneas de los medios de transporte"^^xsd:string ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                                                                                   rdfs:label "Línea"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> rdf:type owl:Class ;
+                                                                                      rdfs:comment <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ,
+                                                                                                   "Operador de los medios de transporte"@es ,
+                                                                                                   "Operador de los medios de transporte."@es ;
+                                                                                      rdfs:label "Operador"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria> rdf:type owl:Class ;
+                                                                                           rdfs:comment <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ,
+                                                                                                        "Zona que permite definir la tarifa del sistema de transporte."@es ;
+                                                                                           rdfs:label "Zona Tarifaria"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card
+:Card rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/sosa/FeatureOfInterest> ;
+      rdfs:comment "Card for the public transport system"@en ,
+                   "Tarjeta para el sistema público de transporte"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+      rdfs:label "Tarjeta de transporte"@es ,
+                 "Transport Card"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult
+:CardValidacionResult rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.w3.org/ns/sosa/Result> ;
+                      rdfs:comment "Result's validation of the transport card."@en ,
+                                   "Resultado de la validación de la tarjeta de transporte"@es ;
+                      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+                      rdfs:label "Card validation result"@en ,
+                                 "Resultado de validación de la tarjeta"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation
+:CardValidation rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+                rdfs:comment "Observación de la validación de la tarjeta de transporte"@es ,
+                             "Observation of the transport card validation"^^xsd:string ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+                rdfs:label "Card Validation"@en ,
+                           "Validación de la tarjeta"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint
+:DPayPoint rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+           rdfs:comment "Sensor del punto de pago"@es ,
+                        "Sensor pay point"@en ;
+           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+           rdfs:label "DPayPoint"@en ,
+                      "DPayPoint"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#UserEntry
+:UserEntry rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+           rdfs:comment "Entrada del usuario al sistema de transporte"@es ,
+                        "User entry at the transport system"@en ;
+           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+           rdfs:label "Entrada de Usuario"@es ,
+                      "User Entry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               owl:disjointWith <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    """@en ;
+                                                rdfs:comment """
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/ont/gml> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "Geometry"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/gml#AbstractCurveSegment
+<http://www.opengis.net/ont/gml#AbstractCurveSegment> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/gml#AbstractGeometry
+<http://www.opengis.net/ont/gml#AbstractGeometry> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/gml#AbstractSurfacePatch
+<http://www.opengis.net/ont/gml#AbstractSurfacePatch> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/sf#Geometry
+<http://www.opengis.net/ont/sf#Geometry> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/sf#Point
+<http://www.opengis.net/ont/sf#Point> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.opengis.net/ont/sf#Geometry> ;
+                                      rdfs:comment """
+A Point is a 0-dimensional geometric object and represents a single location in coordinate space. 
+A Point has an x-coordinate value, a y-coordinate value. If called for by the associated Spatial Reference System, it may also have coordinate values for z and m.
+The boundary of a Point is the empty set.
+    """@en ;
+                                      rdfs:isDefinedBy <http://www.opengis.net/ont/sf> ;
+                                      rdfs:label "Point"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/ActuatableProperty
+<http://www.w3.org/ns/sosa/ActuatableProperty> rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> .
+
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://www.w3.org/ns/ssn/hasProperty> ;
+                                                                owl:allValuesFrom <http://www.w3.org/ns/ssn/Property>
+                                                              ] .
+
+
+###  http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> .
+
+
+###  http://www.w3.org/ns/ssn/Deployment
+<http://www.w3.org/ns/ssn/Deployment> rdf:type owl:Class ;
+                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://www.w3.org/ns/ssn/forProperty> ;
+                                                        owl:allValuesFrom <http://www.w3.org/ns/ssn/Property>
+                                                      ] .
+
+
+###  http://www.w3.org/ns/ssn/Property
+<http://www.w3.org/ns/ssn/Property> rdf:type owl:Class ;
+                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://www.w3.org/ns/ssn/isPropertyOf> ;
+                                                      owl:allValuesFrom <http://www.w3.org/ns/sosa/FeatureOfInterest>
+                                                    ] ;
+                                    rdfs:comment "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."@en ;
+                                    rdfs:isDefinedBy <http://www.w3.org/ns/ssn/> ;
+                                    rdfs:label "Property"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."@en .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
