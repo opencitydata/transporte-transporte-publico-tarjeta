@@ -1,0 +1,329 @@
+{
+  "@context" : {
+    "validationType" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType",
+      "@type" : "@id"
+    },
+    "parada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada",
+      "@type" : "@id"
+    },
+    "paradaEnIntercambiador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador",
+      "@type" : "@id"
+    },
+    "Deployment" : {
+      "@id" : "http://www.w3.org/ns/ssn/Deployment"
+    },
+    "linea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea",
+      "@type" : "@id"
+    },
+    "Linea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea"
+    },
+    "cabeceraLinea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "CustomBusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/CustomBusStop"
+    },
+    "DPayPoint" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint"
+    },
+    "ParadaDeCercanias" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias"
+    },
+    "asWKT" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asWKT",
+      "@type" : "http://www.opengis.net/ont/geosparql#wktLiteral"
+    },
+    "MarkedBusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/MarkedBusStop"
+    },
+    "terminalLinea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea",
+      "@type" : "@id"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+    },
+    "TramMetroUndergroundStationEntrance" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "isSimple" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#isSimple"
+    },
+    "OffStreetStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/OffStreetStopPoint"
+    },
+    "ActuatableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ActuatableProperty"
+    },
+    "replacement" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/replacement",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "Result" : {
+      "@id" : "http://www.w3.org/ns/sosa/Result"
+    },
+    "Marquesina" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina"
+    },
+    "profile" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile",
+      "@type" : "@id"
+    },
+    "compassPointBearing" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/compassPointBearing",
+      "@type" : "@id"
+    },
+    "StopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/StopPoint"
+    },
+    "AbstractGeometry" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractGeometry"
+    },
+    "ZonaTarifaria" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria"
+    },
+    "coordinateDimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#coordinateDimension"
+    },
+    "hasProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/hasProperty",
+      "@type" : "@id"
+    },
+    "Card" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card"
+    },
+    "TramMetroUndergroundPlatform" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform"
+    },
+    "LineaTranvia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia"
+    },
+    "coronaTarifaria" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria",
+      "@type" : "@id"
+    },
+    "OnStreetStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/OnStreetStopPoint"
+    },
+    "ParadaDeMetroLigero" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero"
+    },
+    "LineaMetro" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro"
+    },
+    "paradaEnEstacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "AbstractSurfacePatch" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractSurfacePatch"
+    },
+    "RailStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailStopPoint"
+    },
+    "hasSerialization" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasSerialization",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "AbstractCurveSegment" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractCurveSegment"
+    },
+    "HailAndRideBusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/HailAndRideBusStop"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "BusCoachTramOnStreetPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint"
+    },
+    "asGML" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asGML",
+      "@type" : "http://www.opengis.net/ont/geosparql#gmlLiteral"
+    },
+    "LineaMetroLigero" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero"
+    },
+    "TramMetroUndergroundAccessArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea"
+    },
+    "MetroStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/MetroStopPoint"
+    },
+    "BusCoachStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachStopPoint"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "mainNptgLocality" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/mainNptgLocality",
+      "@type" : "@id"
+    },
+    "Point" : {
+      "@id" : "http://www.opengis.net/ont/sf#Point"
+    },
+    "spatialDimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#spatialDimension"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "CardValidacionResult" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult"
+    },
+    "forProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/forProperty",
+      "@type" : "@id"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "@type" : "@id"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/ns/ssn/Property"
+    },
+    "title" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#title",
+      "@type" : "@id"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "RailAccessArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailAccessArea"
+    },
+    "StopArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/StopArea"
+    },
+    "UserEntry" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#UserEntry"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "isPropertyOf" : {
+      "@id" : "http://www.w3.org/ns/ssn/isPropertyOf",
+      "@type" : "@id"
+    },
+    "RailPlatform" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailPlatform"
+    },
+    "isEmpty" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#isEmpty"
+    },
+    "Darsena" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena"
+    },
+    "estacionTieneParada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada",
+      "@type" : "@id"
+    },
+    "operador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador",
+      "@type" : "@id"
+    },
+    "CardValidation" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "RailStationEntrance" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailStationEntrance"
+    },
+    "stopValidity" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopValidity",
+      "@type" : "@id"
+    },
+    "metro" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/metro",
+      "@type" : "@id"
+    },
+    "BusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusStop"
+    },
+    "ObservableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "FlexibleBusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/FlexibleBusStop"
+    },
+    "LineaBus" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus"
+    },
+    "dimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#dimension"
+    },
+    "station" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/station",
+      "@type" : "@id"
+    },
+    "PosteParadaDeBus" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus"
+    },
+    "defaultGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#defaultGeometry",
+      "@type" : "@id"
+    },
+    "LineaTren" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "stopArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopArea",
+      "@type" : "@id"
+    },
+    "stopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopPoint",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "ParadaDeMetro" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro"
+    },
+    "Observation" : {
+      "@id" : "http://www.w3.org/ns/sosa/Observation"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+    },
+    "Operador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador"
+    }
+  }
+}
