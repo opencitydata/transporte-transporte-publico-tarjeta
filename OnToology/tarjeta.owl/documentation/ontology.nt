@@ -5,6 +5,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Polit\u00E9cnica de Madrid and Localidata)" .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/elements/1.1/date> "2018-06-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representaci\u00F3n de datos asociados a la tarjeta de transporte p\u00FAblico"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/elements/1.1/title> "Vocabulary for represent the data associated to the public transport card"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/terms/rights> <http://purl.org/NET/rdflicense/cc-by4.0> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/vocab/vann/preferredNamespacePrefix> "esttp" .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta" .
@@ -658,7 +659,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observaci\u00F3n de la validaci\u00F3n de la tarjeta de transporte"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observation of the transport card validation" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observation of the transport card validation"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation> <http://www.w3.org/2000/01/rdf-schema#label> "Card Validation"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation> <http://www.w3.org/2000/01/rdf-schema#label> "Validaci\u00F3n de la tarjeta"@es .

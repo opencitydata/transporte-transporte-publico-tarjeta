@@ -19,6 +19,7 @@
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid and Localidata)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-04</dc:date>
         <dc:title xml:lang="es">Vocabulario para la representación de datos asociados a la tarjeta de transporte público</dc:title>
+        <dc:title xml:lang="en">Vocabulary for represent the data associated to the public transport card</dc:title>
         <terms:rights rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esttp</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta</vann:preferredNamespaceUri>
@@ -1166,7 +1167,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion</rdfs:co
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:comment xml:lang="es">Observación de la validación de la tarjeta de transporte</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation of the transport card validation</rdfs:comment>
+        <rdfs:comment xml:lang="en">Observation of the transport card validation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta"/>
         <rdfs:label xml:lang="en">Card Validation</rdfs:label>
         <rdfs:label xml:lang="es">Validación de la tarjeta</rdfs:label>
