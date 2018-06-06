@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "-59a8460a:163d46f878a:-7ff1" "http://transport.data.gov.uk/def/naptan/RailStopPoint" "http://transport.data.gov.uk/def/naptan/BusStop" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser" "http://transport.data.gov.uk/def/naptan/StopPoint" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea" "foaf:Person" "schema:PostalAddress" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" "http://www.opengis.net/ont/geosparql#Geometry" "http://transport.data.gov.uk/def/naptan/StopArea" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero" "schema:Person" "-59a8460a:163d46f878a:-7ffc" "-59a8460a:163d46f878a:-7ff7" "skos:Concept" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus" "http://www.opengis.net/ont/geosparql#Feature" "-59a8460a:163d46f878a:-7ff4" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro" "http://transport.data.gov.uk/def/naptan/MetroStopPoint" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias" "http://www.w3.org/ns/ssn/Property" "sosa:ObservableProperty" "sosa:FeatureOfInterest" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Observation" "sosa:Sample" "time:TemporalEntity" "sosa:Sensor" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "http://transport.data.gov.uk/def/naptan/RailStopPoint" "3c10fda2:163d47e06af:-7ffc" "http://transport.data.gov.uk/def/naptan/BusStop" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser" "http://transport.data.gov.uk/def/naptan/StopPoint" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea" "foaf:Person" "schema:PostalAddress" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" "http://www.opengis.net/ont/geosparql#Geometry" "http://transport.data.gov.uk/def/naptan/StopArea" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero" "schema:Person" "3c10fda2:163d47e06af:-7ff4" "skos:Concept" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card" "3c10fda2:163d47e06af:-7ff7" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus" "http://www.opengis.net/ont/geosparql#Feature" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro" "http://transport.data.gov.uk/def/naptan/MetroStopPoint" "3c10fda2:163d47e06af:-7ff1" "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias" "http://www.w3.org/ns/ssn/Property" "sosa:ObservableProperty" "sosa:FeatureOfInterest" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Observation" "sosa:Sample" "time:TemporalEntity" "sosa:Sensor" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
 	"sosa:observedProperty" -> "sosa:ObservableProperty" [ label = "schema:rangeIncludes" ];
 	"sosa:observedProperty" -> "sosa:Observation" [ label = "schema:domainIncludes" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada" [ label = "rdfs:subPropertyOf" ];
@@ -66,28 +66,28 @@ node [shape = rectangle, color="orange"]; "-59a8460a:163d46f878a:-7ff1" "http://
 	"sosa:isHostedBy" -> "sosa:Sensor" [ label = "schema:domainIncludes" ];
 	"sosa:isHostedBy" -> "sosa:Actuator" [ label = "schema:domainIncludes" ];
 	"NULL" -> "http://www.w3.org/ns/ssn/isPropertyOf" [ label = "owl:onProperty" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ff0" [ label = "owl:unionOf" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" [ label = "rdf:first" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ff3" [ label = "owl:unionOf" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7fee" [ label = "rdf:rest" ];
 	"NULL" -> "http://www.w3.org/ns/ssn/forProperty" [ label = "owl:onProperty" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ff6" [ label = "owl:unionOf" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7fef" [ label = "rdf:rest" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ff5" [ label = "rdf:rest" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ff0" [ label = "owl:unionOf" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ff2" [ label = "rdf:rest" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias" [ label = "rdf:first" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "http://transport.data.gov.uk/def/naptan/StopArea" [ label = "rdf:first" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro" [ label = "rdf:first" ];
 	"NULL" -> "http://transport.data.gov.uk/def/naptan/StopPoint" [ label = "rdf:first" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ff3" [ label = "owl:unionOf" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7fed" [ label = "rdf:rest" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero" [ label = "rdf:first" ];
 	"NULL" -> "sosa:FeatureOfInterest" [ label = "owl:allValuesFrom" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7fef" [ label = "rdf:rest" ];
 	"NULL" -> "http://www.w3.org/ns/ssn/hasProperty" [ label = "owl:onProperty" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7fed" [ label = "rdf:rest" ];
-	"NULL" -> "-59a8460a:163d46f878a:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ff2" [ label = "rdf:rest" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "3c10fda2:163d47e06af:-7ff6" [ label = "owl:unionOf" ];
 	"NULL" -> "http://www.w3.org/ns/ssn/Property" [ label = "owl:allValuesFrom" ];
 	"http://www.opengis.net/ont/geosparql#defaultGeometry" -> "http://www.opengis.net/ont/geosparql#hasGeometry" [ label = "rdfs:subPropertyOf" ];
 	"sosa:hasSample" -> "sosa:Sample" [ label = "schema:rangeIncludes" ];
@@ -104,7 +104,7 @@ node [shape = rectangle, color="orange"]; "-59a8460a:163d46f878a:-7ff1" "http://
 	"http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus" [ label = "owl:disjointWith" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina" [ label = "owl:disjointWith" ];
 	"sosa:" -> "http://www.opengeospatial.org/ogc/Software" [ label = "dcterms:license" ];
-	"sosa:" -> "db31b23609019444769e302ab8bdc9bd" [ label = "dcterms:creator" ];
+	"sosa:" -> "bbeb0fa8820745ee02f647b73935945d" [ label = "dcterms:creator" ];
 	"sosa:" -> "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" [ label = "dcterms:license" ];
 	"sosa:isFeatureOfInterestOf" -> "sosa:FeatureOfInterest" [ label = "schema:domainIncludes" ];
 	"sosa:isFeatureOfInterestOf" -> "sosa:Actuation" [ label = "schema:rangeIncludes" ];
@@ -121,8 +121,8 @@ node [shape = rectangle, color="orange"]; "-59a8460a:163d46f878a:-7ff1" "http://
 	"http://www.opengis.net/ont/geosparql#Feature" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "http://www.opengis.net/ont/geosparql#hasGeometry" ];
 	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#gmlLiteral" [ label = "http://www.opengis.net/ont/geosparql#asGML" ];
 	"owl:Thing" -> "skos:Concept" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea" -> "-59a8460a:163d46f878a:-7ff4" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada" ];
-	"owl:Thing" -> "-59a8460a:163d46f878a:-7ffc" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea" -> "3c10fda2:163d47e06af:-7ff4" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada" ];
+	"owl:Thing" -> "3c10fda2:163d47e06af:-7ffc" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada" ];
 	"http://transport.data.gov.uk/def/naptan/StopPoint" -> "owl:Thing" [ label = "http://transport.data.gov.uk/def/naptan/mainNptgLocality" ];
 	"http://transport.data.gov.uk/def/naptan/StopPoint" -> "owl:Thing" [ label = "http://transport.data.gov.uk/def/naptan/stopValidity" ];
 	"owl:Thing" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria" ];
@@ -131,7 +131,7 @@ node [shape = rectangle, color="orange"]; "-59a8460a:163d46f878a:-7ff1" "http://
 	"http://www.opengis.net/ont/geosparql#Geometry" -> "owl:Thing" [ label = "http://www.opengis.net/ont/geosparql#spatialDimension" ];
 	"http://www.opengis.net/ont/geosparql#Geometry" -> "owl:Thing" [ label = "http://www.opengis.net/ont/geosparql#isSimple" ];
 	"schema:PostalAddress" -> "xsd:string" [ label = "schema:addressLocality" ];
-	"-59a8460a:163d46f878a:-7ff7" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea" ];
+	"3c10fda2:163d47e06af:-7ff7" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea" ];
 	"owl:Thing" -> "skos:Concept" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile" ];
 	"owl:Thing" -> "schema:PostalAddress" [ label = "schema:address" ];
 	"http://transport.data.gov.uk/def/naptan/BusStop" -> "owl:Thing" [ label = "http://transport.data.gov.uk/def/naptan/compassPointBearing" ];
@@ -140,7 +140,7 @@ node [shape = rectangle, color="orange"]; "-59a8460a:163d46f878a:-7ff1" "http://
 	"http://www.opengis.net/ont/geosparql#Geometry" -> "owl:Thing" [ label = "http://www.opengis.net/ont/geosparql#isEmpty" ];
 	"owl:Thing" -> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador" ];
 	"owl:Thing" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "http://www.opengis.net/ont/geosparql#defaultGeometry" ];
-	"-59a8460a:163d46f878a:-7ff1" -> "owl:Thing" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion" ];
+	"3c10fda2:163d47e06af:-7ff1" -> "owl:Thing" [ label = "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion" ];
 	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#wktLiteral" [ label = "http://www.opengis.net/ont/geosparql#asWKT" ];
 	"http://www.opengis.net/ont/geosparql#Geometry" -> "owl:Thing" [ label = "http://www.opengis.net/ont/geosparql#coordinateDimension" ];
 	"schema:PostalAddress" -> "xsd:string" [ label = "schema:addressRegion" ];

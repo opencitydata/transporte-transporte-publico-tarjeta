@@ -12,7 +12,8 @@
                                                                                       <http://purl.org/dc/elements/1.1/contributor> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
                                                                                       <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid and Localidata)"^^xsd:string ;
                                                                                       <http://purl.org/dc/elements/1.1/date> "2018-06-04"^^xsd:date ;
-                                                                                      <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos asociados a la tarjeta de transporte público"@es ;
+                                                                                      <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos asociados a la tarjeta de transporte público"@es ,
+                                                                                                                              "Vocabulary for represent the data associated to the public transport card"@en ;
                                                                                       <http://purl.org/dc/terms/rights> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                                                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "esttp"^^xsd:string ;
                                                                                       <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta"^^xsd:string ;
@@ -747,7 +748,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion"""@en ;
 :CardValidation rdf:type owl:Class ;
                 rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
                 rdfs:comment "Observación de la validación de la tarjeta de transporte"@es ,
-                             "Observation of the transport card validation"^^xsd:string ;
+                             "Observation of the transport card validation"@en ;
                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
                 rdfs:label "Card Validation"@en ,
                            "Validación de la tarjeta"@es .
