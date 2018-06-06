@@ -8,6 +8,9 @@
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada",
       "@type" : "@id"
     },
+    "CardChargeResult" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult"
+    },
     "paradaEnIntercambiador" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador",
       "@type" : "@id"
@@ -38,6 +41,10 @@
     "ParadaDeCercanias" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias"
     },
+    "addressRegion" : {
+      "@id" : "http://schema.org/addressRegion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "asWKT" : {
       "@id" : "http://www.opengis.net/ont/geosparql#asWKT",
       "@type" : "http://www.opengis.net/ont/geosparql#wktLiteral"
@@ -57,6 +64,9 @@
     },
     "Geometry" : {
       "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "TransportUser" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser"
     },
     "isSimple" : {
       "@id" : "http://www.opengis.net/ont/geosparql#isSimple"
@@ -94,6 +104,9 @@
       "@id" : "http://transport.data.gov.uk/def/naptan/compassPointBearing",
       "@type" : "@id"
     },
+    "DSalePoint" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint"
+    },
     "StopPoint" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/StopPoint"
     },
@@ -103,12 +116,19 @@
     "ZonaTarifaria" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria"
     },
+    "gender" : {
+      "@id" : "http://schema.org/gender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "coordinateDimension" : {
       "@id" : "http://www.opengis.net/ont/geosparql#coordinateDimension"
     },
     "hasProperty" : {
       "@id" : "http://www.w3.org/ns/ssn/hasProperty",
       "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://schema.org/Person"
     },
     "Card" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card"
@@ -142,6 +162,14 @@
     "AbstractSurfacePatch" : {
       "@id" : "http://www.opengis.net/ont/gml#AbstractSurfacePatch"
     },
+    "chargeType" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType",
+      "@type" : "@id"
+    },
+    "postalCode" : {
+      "@id" : "http://schema.org/postalCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "RailStopPoint" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/RailStopPoint"
     },
@@ -155,8 +183,16 @@
     "HailAndRideBusStop" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/HailAndRideBusStop"
     },
+    "address" : {
+      "@id" : "http://schema.org/address",
+      "@type" : "@id"
+    },
     "rights" : {
       "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "birthYear" : {
+      "@id" : "http://dbpedia.org/ontology/birthYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
     },
     "BusCoachTramOnStreetPoint" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint"
@@ -171,8 +207,17 @@
     "TramMetroUndergroundAccessArea" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea"
     },
+    "PostalAddress" : {
+      "@id" : "http://schema.org/PostalAddress"
+    },
+    "CardChargeObservation" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation"
+    },
     "MetroStopPoint" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/MetroStopPoint"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
     "BusCoachStopPoint" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachStopPoint"
@@ -217,6 +262,9 @@
     "RailAccessArea" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/RailAccessArea"
     },
+    "CardCharge" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge"
+    },
     "StopArea" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/StopArea"
     },
@@ -233,11 +281,19 @@
     "RailPlatform" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/RailPlatform"
     },
+    "hasCard" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard",
+      "@type" : "@id"
+    },
     "isEmpty" : {
       "@id" : "http://www.opengis.net/ont/geosparql#isEmpty"
     },
     "Darsena" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena"
+    },
+    "addressLocality" : {
+      "@id" : "http://schema.org/addressLocality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "estacionTieneParada" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada",

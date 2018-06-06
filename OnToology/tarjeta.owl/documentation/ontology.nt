@@ -4,12 +4,14 @@
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/elements/1.1/contributor> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Polit\u00E9cnica de Madrid)" .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Polit\u00E9cnica de Madrid and Localidata)" .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/elements/1.1/date> "2018-06-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representaci\u00F3n de datos asociados a la tarjeta de transporte p\u00FAblico"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/dc/terms/rights> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/vocab/vann/preferredNamespacePrefix> "esttp" .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta" .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulario para la representaci\u00F3n de los datos de la validaci\u00F3n de la tarjeta de transporte p\u00FAblico."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary to represent the card validation of the public transport."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://www.w3.org/2000/01/rdf-schema#label> "Validaci\u00F3n de tarjeta"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://www.w3.org/2000/01/rdf-schema#label> "Card validation" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulario para la representaci\u00F3n de los datos asociados a la tarjeta de transporte p\u00FAblico."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary to represent the data associated to the transport card."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://www.w3.org/2000/01/rdf-schema#label> "Tarjeta de Transporte"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Card"@en .
 # 
 # 
 # #################################################################
@@ -30,6 +32,9 @@
 # 
 # http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -75,6 +80,9 @@
 # http://www.w3.org/2001/XMLSchema#date
 <http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # 
 # 
 # #################################################################
@@ -83,6 +91,13 @@
 # #
 # #################################################################
 # 
+# 
+# http://schema.org/address
+<http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/PostalAddress> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical address of the item."@en .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
 # 
 # http://transport.data.gov.uk/def/naptan/compassPointBearing
 <http://transport.data.gov.uk/def/naptan/compassPointBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -215,6 +230,24 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
 # 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType> <http://www.w3.org/2000/01/rdf-schema#comment> "Charge type of the transport card. It is defined by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-carga"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de carga de la tarjeta de transporte. Se define mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-carga"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType> <http://www.w3.org/2000/01/rdf-schema#label> "charge type"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de carga"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard> <http://www.w3.org/2000/01/rdf-schema#comment> "El usuario tiene una tarjeta de transporte que tras ser cargada con un t\u00EDtulo de viaje le habilita a utilizar un medio de transporte."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard> <http://www.w3.org/2000/01/rdf-schema#comment> "The user has a transport card that, after being loaded with a travel title, enables him to use the transport."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard> <http://www.w3.org/2000/01/rdf-schema#label> "has card"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tarjeta"@es .
+# 
 # http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -236,8 +269,8 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/2000/01/rdf-schema#comment> "El tipo de validaci\u00F3n que se aplica a la tarjeta. Los tipos pueden ser: abono, multiviaje o sencillo. Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of validation applied to the card. It is represented by the scheme concept: \nhttp://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/2000/01/rdf-schema#comment> "El tipo de validaci\u00F3n que se aplica a la tarjeta. Los tipos pueden ser: abono, multiviaje o sencillo. Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of validation applied to the card. It is represented by the concept scheme: \nhttp://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de validaci\u00F3n"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType> <http://www.w3.org/2000/01/rdf-schema#label> "validation type"@en .
@@ -288,6 +321,52 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #
 # #################################################################
 # 
+# 
+# http://dbpedia.org/ontology/birthYear
+<http://dbpedia.org/ontology/birthYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/birthYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/ontology/birthYear> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dbpedia.org/ontology/> .
+<http://dbpedia.org/ontology/birthYear> <http://www.w3.org/2000/01/rdf-schema#label> "a\u00F1o de nacimiento"@es .
+<http://dbpedia.org/ontology/birthYear> <http://www.w3.org/2000/01/rdf-schema#label> "birth year"@en .
+# 
+# http://schema.org/addressLocality
+<http://schema.org/addressLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#comment> "La localidad. Por ejemplo, Zaragoza"@es .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#comment> "The locality. For example, Mountain View."@en .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#label> "addressLocality"@en .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#label> "localidad"@es .
+# 
+# http://schema.org/addressRegion
+<http://schema.org/addressRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "La regi\u00F3n. Por ejemplo, Provincia de Zaragoza o Comunidad Aut\u00F3noma de Arag\u00F3n"@es .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "The region. For example, CA."@en .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#label> "addressRegion"@en .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#label> "regi\u00F3n"@es .
+# 
+# http://schema.org/gender
+<http://schema.org/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#comment> "Gender of the person. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender."@en .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#label> "gender"@en .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#label> "g\u00E9nero"@es .
+# 
+# http://schema.org/postalCode
+<http://schema.org/postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "El c\u00F3digo postal. Por ejemplo, 50071"@es .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The postal code. For example, 94043."@en .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "c\u00F3digo postal"@es .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "postalCode"@en .
 # 
 # http://www.opengis.net/ont/geosparql#asGML
 <http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -364,6 +443,14 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #
 # #################################################################
 # 
+# 
+# http://schema.org/Person
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://transport.data.gov.uk/def/naptan/BusCoachStopPoint
 <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -532,10 +619,36 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card> <http://www.w3.org/2000/01/rdf-schema#label> "Tarjeta de transporte"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Card"@en .
 # 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#comment> "Card charge at the sale point."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#comment> "Carga de la tarjeta en el punto de venta."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#label> "Card charge"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#label> "Carga de la tarjeta"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Card charge observation of the transport card."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observaci\u00F3n de la carga de la tarjeta del sistema de transporte."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Card charge observation"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Observaci\u00F3n de la carga de la tarjeta"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Result> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Result of the transport card charge"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#label> "Card charge result"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#label> "Resultado de la carga de tarjeta"@es .
+# 
 # http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Result> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Result's validation of the transport card."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Result of the  transport card validation."@en .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Resultado de la validaci\u00F3n de la tarjeta de transporte"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult> <http://www.w3.org/2000/01/rdf-schema#label> "Card validation result"@en .
@@ -558,6 +671,22 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint> <http://www.w3.org/2000/01/rdf-schema#label> "DPayPoint"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint> <http://www.w3.org/2000/01/rdf-schema#label> "DPayPoint"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensor del punto de venta."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensor of the sale point"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint> <http://www.w3.org/2000/01/rdf-schema#label> "DSalePoint"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint> <http://www.w3.org/2000/01/rdf-schema#label> "DSalePoint"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser> <http://www.w3.org/2000/01/rdf-schema#label> "Transport User"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser> <http://www.w3.org/2000/01/rdf-schema#label> "Usuario de Transporte"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#UserEntry
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#UserEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -645,5 +774,8 @@ _:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/so
 <http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
 <http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
 <http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2004/02/skos/core#definition> "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."@en .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
