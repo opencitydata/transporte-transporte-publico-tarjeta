@@ -12,12 +12,14 @@
                                                                                       <http://purl.org/dc/elements/1.1/contributor> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
                                                                                       <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid and Localidata)"^^xsd:string ;
                                                                                       <http://purl.org/dc/elements/1.1/date> "2018-06-04"^^xsd:date ;
+                                                                                      <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos asociados a la tarjeta de transporte público"@es ;
                                                                                       <http://purl.org/dc/terms/rights> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                                                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "esttp"^^xsd:string ;
                                                                                       <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta"^^xsd:string ;
-                                                                                      rdfs:comment "Vocabulario para la representación de los datos de la validación de la tarjeta de transporte público."@es ,
-                                                                                                   "Vocabulary to represent the card validation of the public transport."@en ;
-                                                                                      rdfs:label "Validación de tarjeta"@es ,
-                                                                                                 "Card validation"^^xsd:string .
+                                                                                      rdfs:comment "Vocabulario para la representación de los datos asociados a la tarjeta de transporte público."@es ,
+                                                                                                   "Vocabulary to represent the data associated to the transport card."@en ;
+                                                                                      rdfs:label "Tarjeta de Transporte"@es ,
+                                                                                                 "Transport Card"@en .
 
 #################################################################
 #    Annotation properties
@@ -37,6 +39,10 @@
 
 ###  http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/issued
@@ -95,9 +101,21 @@
 xsd:date rdf:type rdfs:Datatype .
 
 
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://schema.org/address
+<http://schema.org/address> rdf:type owl:ObjectProperty ;
+                            rdfs:range <http://schema.org/PostalAddress> ;
+                            rdfs:comment "Physical address of the item."@en ;
+                            rdfs:isDefinedBy <http://schema.org/> ;
+                            rdfs:label "address"@en .
+
 
 ###  http://transport.data.gov.uk/def/naptan/compassPointBearing
 <http://transport.data.gov.uk/def/naptan/compassPointBearing> rdf:type owl:ObjectProperty ;
@@ -223,6 +241,26 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                            rdfs:subPropertyOf <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType
+:chargeType rdf:type owl:ObjectProperty ;
+            rdfs:comment "Charge type of the transport card. It is defined by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-carga"@es ,
+                         "Tipo de carga de la tarjeta de transporte. Se define mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-carga"@es ;
+            rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+            rdfs:label "charge type"@en ,
+                       "tipo de carga"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard
+:hasCard rdf:type owl:ObjectProperty ;
+         rdfs:domain :TransportUser ;
+         rdfs:range :Card ;
+         rdfs:comment "El usuario tiene una tarjeta de transporte que tras ser cargada con un título de viaje le habilita a utilizar un medio de transporte."@es ,
+                      "The user has a transport card that, after being loaded with a travel title, enables him to use the transport."@en ;
+         rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+         rdfs:label "has card"@en ,
+                    "tiene tarjeta"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile
 :profile rdf:type owl:ObjectProperty ;
          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -246,9 +284,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType
 :validationType rdf:type owl:ObjectProperty ;
                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                rdfs:comment "El tipo de validación que se aplica a la tarjeta. Los tipos pueden ser: abono, multiviaje o sencillo. Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"@es ,
-                             """The type of validation applied to the card. It is represented by the scheme concept: 
-http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"""@en ;
+                rdfs:comment "El tipo de validación que se aplica a la tarjeta. Los tipos pueden ser: abono, multiviaje o sencillo. Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion"@es ,
+                             """The type of validation applied to the card. It is represented by the concept scheme: 
+http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion"""@en ;
                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
                 rdfs:label "tipo de validación"@es ,
                            "validation type"@en .
@@ -306,6 +344,57 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"""@en ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://dbpedia.org/ontology/birthYear
+<http://dbpedia.org/ontology/birthYear> rdf:type owl:DatatypeProperty ;
+                                        rdfs:range xsd:gYear ;
+                                        rdfs:isDefinedBy <http://dbpedia.org/ontology/> ;
+                                        rdfs:label "año de nacimiento"@es ,
+                                                   "birth year"@en .
+
+
+###  http://schema.org/addressLocality
+<http://schema.org/addressLocality> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <http://schema.org/PostalAddress> ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "La localidad. Por ejemplo, Zaragoza"@es ,
+                                                 "The locality. For example, Mountain View."@en ;
+                                    rdfs:isDefinedBy <http://schema.org/> ;
+                                    rdfs:label "addressLocality"@en ,
+                                               "localidad"@es .
+
+
+###  http://schema.org/addressRegion
+<http://schema.org/addressRegion> rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain <http://schema.org/PostalAddress> ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:comment "La región. Por ejemplo, Provincia de Zaragoza o Comunidad Autónoma de Aragón"@es ,
+                                               "The region. For example, CA."@en ;
+                                  rdfs:isDefinedBy <http://schema.org/> ;
+                                  rdfs:label "addressRegion"@en ,
+                                             "región"@es .
+
+
+###  http://schema.org/gender
+<http://schema.org/gender> rdf:type owl:DatatypeProperty ;
+                           rdfs:domain <http://schema.org/Person> ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Gender of the person. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender."@en ;
+                           rdfs:isDefinedBy <http://schema.org/> ;
+                           rdfs:label "gender"@en ,
+                                      "género"@es .
+
+
+###  http://schema.org/postalCode
+<http://schema.org/postalCode> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain <http://schema.org/PostalAddress> ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "El código postal. Por ejemplo, 50071"@es ,
+                                            "The postal code. For example, 94043."@en ;
+                               rdfs:isDefinedBy <http://schema.org/> ;
+                               rdfs:label "código postal"@es ,
+                                          "postalCode"@en .
+
 
 ###  http://www.opengis.net/ont/geosparql#asGML
 <http://www.opengis.net/ont/geosparql#asGML> rdf:type owl:DatatypeProperty ;
@@ -403,6 +492,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"""@en ;
 #################################################################
 #    Classes
 #################################################################
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class ;
+                           owl:equivalentClass <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> rdf:type owl:Class ;
+                                  rdfs:isDefinedBy <http://schema.org/> .
+
 
 ###  http://transport.data.gov.uk/def/naptan/BusCoachStopPoint
 <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> rdf:type owl:Class ;
@@ -605,10 +704,39 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"""@en ;
                  "Transport Card"@en .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge
+:CardCharge rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+            rdfs:comment "Card charge at the sale point."@en ,
+                         "Carga de la tarjeta en el punto de venta."@es ;
+            rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+            rdfs:label "Card charge"@en ,
+                       "Carga de la tarjeta"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation
+:CardChargeObservation rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+                       rdfs:comment "Card charge observation of the transport card."@en ,
+                                    "Observación de la carga de la tarjeta del sistema de transporte."@es ;
+                       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+                       rdfs:label "Card charge observation"@en ,
+                                  "Observación de la carga de la tarjeta"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult
+:CardChargeResult rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/sosa/Result> ;
+                  rdfs:comment "Result of the transport card charge"@en ;
+                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/tarjeta> ;
+                  rdfs:label "Card charge result"@en ,
+                             "Resultado de la carga de tarjeta"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult
 :CardValidacionResult rdf:type owl:Class ;
                       rdfs:subClassOf <http://www.w3.org/ns/sosa/Result> ;
-                      rdfs:comment "Result's validation of the transport card."@en ,
+                      rdfs:comment "Result of the  transport card validation."@en ,
                                    "Resultado de la validación de la tarjeta de transporte"@es ;
                       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
                       rdfs:label "Card validation result"@en ,
@@ -633,6 +761,24 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion"""@en ;
            rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
            rdfs:label "DPayPoint"@en ,
                       "DPayPoint"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint
+:DSalePoint rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+            rdfs:comment "Sensor del punto de venta."@es ,
+                         "Sensor of the sale point"@en ;
+            rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+            rdfs:label "DSalePoint"@en ,
+                       "DSalePoint"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser
+:TransportUser rdf:type owl:Class ;
+               rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+               rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
+               rdfs:label "Transport User"@en ,
+                          "Usuario de Transporte"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#UserEntry
@@ -751,6 +897,10 @@ The boundary of a Point is the empty set.
                                     rdfs:isDefinedBy <http://www.w3.org/ns/ssn/> ;
                                     rdfs:label "Property"@en ;
                                     <http://www.w3.org/2004/02/skos/core#definition> "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

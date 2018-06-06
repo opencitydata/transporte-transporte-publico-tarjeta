@@ -36,6 +36,18 @@ This section provides details for each class and property defined by Validación
          <a href="#http://transport.data.gov.uk/def/naptan/BusStop" title="http://transport.data.gov.uk/def/naptan/BusStop">Bus Stop</a>
       </li>
       <li>
+         <a href="#CardCharge"
+            title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge">Card charge</a>
+      </li>
+      <li>
+         <a href="#CardChargeObservation"
+            title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation">Card charge observation</a>
+      </li>
+      <li>
+         <a href="#CardChargeResult"
+            title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult">Card charge result</a>
+      </li>
+      <li>
          <a href="#CardValidation"
             title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation">Card Validation</a>
       </li>
@@ -57,6 +69,10 @@ This section provides details for each class and property defined by Validación
       <li>
          <a href="#DPayPoint"
             title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint">DPayPoint</a>
+      </li>
+      <li>
+         <a href="#DSalePoint"
+            title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint">DSalePoint</a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena"
@@ -172,7 +188,17 @@ This section provides details for each class and property defined by Validación
          </a>
       </li>
       <li>
+         <a href="#http://schema.org/Person" title="http://schema.org/Person">
+            <span>person</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Point</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">
+            <span>postal address</span>
+         </a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus"
@@ -230,6 +256,10 @@ This section provides details for each class and property defined by Validación
       <li>
          <a href="#Card"
             title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card">Transport Card</a>
+      </li>
+      <li>
+         <a href="#TransportUser"
+            title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser">Transport User</a>
       </li>
       <li>
          <a href="#UserEntry"
@@ -377,6 +407,75 @@ This section provides details for each class and property defined by Validación
          </dd>
       </dl>
    </div>
+   <div class="entity" id="CardCharge">
+      <h3>Card charge<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge</p>
+      <div class="comment">
+         <span class="markdown">Card charge at the sale point.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CardChargeObservation">
+      <h3>Card charge observation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation</p>
+      <div class="comment">
+         <span class="markdown">Card charge observation of the transport card.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/Observation">observation</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CardChargeResult">
+      <h3>Card charge result<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult</p>
+      <div class="comment">
+         <span class="markdown">Result of the transport card charge</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/transporte/tarjeta">http://vocab.linkeddata.es/datosabiertos/def/transporte/tarjeta</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/Result">result</span>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="CardValidation">
       <h3>Card Validation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -408,7 +507,7 @@ This section provides details for each class and property defined by Validación
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult</p>
       <div class="comment">
-         <span class="markdown">Result's validation of the transport card.</span>
+         <span class="markdown">Result of the  transport card validation.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -465,6 +564,29 @@ This section provides details for each class and property defined by Validación
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint</p>
       <div class="comment">
          <span class="markdown">Sensor pay point</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/Sensor">sensor</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DSalePoint">
+      <h3>DSalePoint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint</p>
+      <div class="comment">
+         <span class="markdown">Sensor of the sale point</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1006,6 +1128,26 @@ This section provides details for each class and property defined by Validación
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://schema.org/Person">
+      <h3>person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Person</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://schema.org/gender" title="http://schema.org/gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://www.opengis.net/ont/sf#Point">
       <h3>Point<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1031,6 +1173,34 @@ The boundary of a Point is the empty set.
          <dd>
             <a href="#http://www.opengis.net/ont/sf#Geometry" title="http://www.opengis.net/ont/sf#Geometry">geometry</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/PostalAddress">
+      <h3>postal address<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/PostalAddress</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://schema.org/addressLocality" title="http://schema.org/addressLocality">addressLocality</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/addressRegion" title="http://schema.org/addressRegion">addressRegion</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/postalCode" title="http://schema.org/postalCode">postalCode</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://schema.org/address" title="http://schema.org/address">address</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1288,6 +1458,39 @@ The boundary of a Point is the empty set.
          <dd>
             <span class="dotted" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</span>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCard"
+               title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard">has card</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TransportUser">
+      <h3>Transport User<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasCard"
+               title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard">has card</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="UserEntry">
@@ -1336,10 +1539,17 @@ The boundary of a Point is the empty set.
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#http://schema.org/address" title="http://schema.org/address">address</a>
+      </li>
+      <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea"
             title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea">
             <span>cabecera linea</span>
          </a>
+      </li>
+      <li>
+         <a href="#chargeType"
+            title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType">charge type</a>
       </li>
       <li>
          <a href="#http://transport.data.gov.uk/def/naptan/compassPointBearing"
@@ -1362,6 +1572,10 @@ The boundary of a Point is the empty set.
             title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada">
             <span>estacion tiene parada</span>
          </a>
+      </li>
+      <li>
+         <a href="#hasCard"
+            title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard">has card</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
@@ -1449,6 +1663,32 @@ The boundary of a Point is the empty set.
             title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType">validation type</a>
       </li>
    </ul>
+   <div class="entity" id="http://schema.org/address">
+      <h3>address<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/address</p>
+      <div class="comment">
+         <span class="markdown">Physical address of the item.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">postal address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea">
       <h3>cabecera linea<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1466,6 +1706,23 @@ The boundary of a Point is the empty set.
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="chargeType">
+      <h3>charge type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#chargeType</p>
+      <div class="comment">
+         <span class="markdown">Charge type of the transport card. It is defined by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-carga</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta</a>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://transport.data.gov.uk/def/naptan/compassPointBearing">
       <h3>compass point bearing<sup class="type-op" title="object property">op</sup>
@@ -1558,6 +1815,39 @@ The boundary of a Point is the empty set.
                <span class="logic">or</span> 
                <a href="#http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero"
                   title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero">parada de metro ligero</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCard">
+      <h3>has card<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#hasCard</p>
+      <div class="comment">
+         <span class="markdown">The user has a transport card that, after being loaded with a travel title, enables him to use the transport.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TransportUser"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser">Transport User</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Card"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card">Transport Card</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2066,8 +2356,8 @@ The boundary of a Point is the empty set.
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#validationType</p>
       <div class="comment">
-         <span class="markdown">The type of validation applied to the card. It is represented by the scheme concept: 
-http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</span>
+         <span class="markdown">The type of validation applied to the card. It is represented by the concept scheme: 
+http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2089,10 +2379,19 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</span>
    <h3 id="dataproperties" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#http://schema.org/addressLocality" title="http://schema.org/addressLocality">addressLocality</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/addressRegion" title="http://schema.org/addressRegion">addressRegion</a>
+      </li>
+      <li>
          <a href="#http://www.opengis.net/ont/geosparql#asGML" title="http://www.opengis.net/ont/geosparql#asGML">asGML asGML</a>
       </li>
       <li>
          <a href="#http://www.opengis.net/ont/geosparql#asWKT" title="http://www.opengis.net/ont/geosparql#asWKT">asWKT asWKT</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/ontology/birthYear" title="http://dbpedia.org/ontology/birthYear">birth year</a>
       </li>
       <li>
          <a href="#http://www.opengis.net/ont/geosparql#coordinateDimension"
@@ -2104,6 +2403,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</span>
          <a href="#http://www.opengis.net/ont/geosparql#dimension" title="http://www.opengis.net/ont/geosparql#dimension">
             <span>dimension</span>
          </a>
+      </li>
+      <li>
+         <a href="#http://schema.org/gender" title="http://schema.org/gender">gender</a>
       </li>
       <li>
          <a href="#http://www.opengis.net/ont/geosparql#hasSerialization"
@@ -2120,12 +2422,75 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</span>
          </a>
       </li>
       <li>
+         <a href="#http://schema.org/postalCode" title="http://schema.org/postalCode">postalCode</a>
+      </li>
+      <li>
          <a href="#http://www.opengis.net/ont/geosparql#spatialDimension"
             title="http://www.opengis.net/ont/geosparql#spatialDimension">
             <span>spatial dimension</span>
          </a>
       </li>
    </ul>
+   <div class="entity" id="http://schema.org/addressLocality">
+      <h3>addressLocality<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/addressLocality</p>
+      <div class="comment">
+         <span class="markdown">The locality. For example, Mountain View.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">postal address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/addressRegion">
+      <h3>addressRegion<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/addressRegion</p>
+      <div class="comment">
+         <span class="markdown">The region. For example, CA.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">postal address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://www.opengis.net/ont/geosparql#asGML">
       <h3>asGML<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -2256,6 +2621,28 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://dbpedia.org/ontology/birthYear">
+      <h3>birth year<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/birthYear</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://dbpedia.org/ontology/">http://dbpedia.org/ontology/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#gYear">g year</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://www.opengis.net/ont/geosparql#coordinateDimension">
       <h3>coordinate dimension<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -2286,6 +2673,36 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</span>
             <dd>
                <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry Geometry</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/gender">
+      <h3>gender<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/gender</p>
+      <div class="comment">
+         <span class="markdown">Gender of the person. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/Person" title="http://schema.org/Person">person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
@@ -2385,6 +2802,36 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipovalidacion</span>
             <dd>
                <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry Geometry</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/postalCode">
+      <h3>postalCode<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/postalCode</p>
+      <div class="comment">
+         <span class="markdown">The postal code. For example, 94043.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">postal address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>

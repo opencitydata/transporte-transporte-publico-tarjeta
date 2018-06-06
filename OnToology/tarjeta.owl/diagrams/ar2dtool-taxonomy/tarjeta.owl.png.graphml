@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="43" parse.nodes="49" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="48" parse.nodes="55" parse.order="free">
       <node id="nid_http://www.opengis.net/ont/gml#AbstractGeometry">
          <data key="d0">
             <y:ShapeNode>
@@ -41,6 +41,41 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="930.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_sosa:Sensor">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sosa:Sensor</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf1" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DSalePoint" target="nid_sosa:Sensor">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
          <data key="d0">
             <y:ShapeNode>
@@ -65,7 +100,42 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf1" source="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/OffStreetStopPoint">
+    <edge id="eid_rdfs:subClassOf2" source="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/OffStreetStopPoint">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="990.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_sosa:Result">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sosa:Result</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf3" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult" target="nid_sosa:Result">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -100,7 +170,42 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf2" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
+    <edge id="eid_rdfs:subClassOf4" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="960.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_foaf:Person">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">foaf:Person</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf5" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#TransportUser" target="nid_foaf:Person">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -135,7 +240,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf3" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
+    <edge id="eid_rdfs:subClassOf6" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -158,7 +263,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf4" source="nid_http://transport.data.gov.uk/def/naptan/RailAccessArea" target="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
+    <edge id="eid_rdfs:subClassOf7" source="nid_http://transport.data.gov.uk/def/naptan/RailAccessArea" target="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -181,7 +286,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf5" source="nid_http://transport.data.gov.uk/def/naptan/OffStreetStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/StopPoint">
+    <edge id="eid_rdfs:subClassOf8" source="nid_http://transport.data.gov.uk/def/naptan/OffStreetStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/StopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -204,7 +309,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf6" source="nid_http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
+    <edge id="eid_rdfs:subClassOf9" source="nid_http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -227,77 +332,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf7" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="870.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-      <node id="nid_sosa:FeatureOfInterest">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="220.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sosa:FeatureOfInterest</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf8" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card" target="nid_sosa:FeatureOfInterest">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="970.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-      <node id="nid_sosa:Observation">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sosa:Observation</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf9" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation" target="nid_sosa:Observation">
+    <edge id="eid_rdfs:subClassOf10" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -332,7 +367,100 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf10" source="nid_http://www.opengis.net/ont/sf#Point" target="nid_http://www.opengis.net/ont/sf#Geometry">
+    <edge id="eid_rdfs:subClassOf11" source="nid_http://www.opengis.net/ont/sf#Point" target="nid_http://www.opengis.net/ont/sf#Geometry">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="870.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_sosa:FeatureOfInterest">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="220.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sosa:FeatureOfInterest</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf12" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card" target="nid_sosa:FeatureOfInterest">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="970.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_sosa:Observation">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sosa:Observation</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf13" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidation" target="nid_sosa:Observation">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="1040.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf14" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation" target="nid_sosa:Observation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -355,7 +483,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
+    <edge id="eid_rdfs:subClassOf15" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -390,7 +518,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf12" source="nid_http://transport.data.gov.uk/def/naptan/CustomBusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
+    <edge id="eid_rdfs:subClassOf16" source="nid_http://transport.data.gov.uk/def/naptan/CustomBusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -413,7 +541,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf13" source="nid_http://transport.data.gov.uk/def/naptan/RailPlatform" target="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
+    <edge id="eid_rdfs:subClassOf17" source="nid_http://transport.data.gov.uk/def/naptan/RailPlatform" target="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -436,7 +564,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
+    <edge id="eid_rdfs:subClassOf18" source="nid_http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -471,7 +599,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#UserEntry" target="nid_sosa:ObservableProperty">
+    <edge id="eid_rdfs:subClassOf19" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#UserEntry" target="nid_sosa:ObservableProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -494,7 +622,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
+    <edge id="eid_rdfs:subClassOf20" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -517,7 +645,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf17" source="nid_http://www.opengis.net/ont/gml#AbstractCurveSegment" target="nid_http://www.opengis.net/ont/geosparql#Geometry">
+    <edge id="eid_rdfs:subClassOf21" source="nid_http://www.opengis.net/ont/gml#AbstractCurveSegment" target="nid_http://www.opengis.net/ont/geosparql#Geometry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -540,7 +668,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias" target="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
+    <edge id="eid_rdfs:subClassOf22" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias" target="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -563,7 +691,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf19" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
+    <edge id="eid_rdfs:subClassOf23" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -586,7 +714,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
+    <edge id="eid_rdfs:subClassOf24" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -609,7 +737,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_http://transport.data.gov.uk/def/naptan/BusCoachStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/StopPoint">
+    <edge id="eid_rdfs:subClassOf25" source="nid_http://transport.data.gov.uk/def/naptan/BusCoachStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/StopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -632,7 +760,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf22" source="nid_http://transport.data.gov.uk/def/naptan/FlexibleBusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
+    <edge id="eid_rdfs:subClassOf26" source="nid_http://transport.data.gov.uk/def/naptan/FlexibleBusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -643,7 +771,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf23" source="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/OffStreetStopPoint">
+    <edge id="eid_rdfs:subClassOf27" source="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/OffStreetStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -666,7 +794,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf24" source="nid_http://www.opengis.net/ont/gml#AbstractSurfacePatch" target="nid_http://www.opengis.net/ont/geosparql#Geometry">
+    <edge id="eid_rdfs:subClassOf28" source="nid_http://www.opengis.net/ont/gml#AbstractSurfacePatch" target="nid_http://www.opengis.net/ont/geosparql#Geometry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -689,7 +817,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_http://transport.data.gov.uk/def/naptan/BusStop" target="nid_http://transport.data.gov.uk/def/naptan/OnStreetStopPoint">
+    <edge id="eid_rdfs:subClassOf29" source="nid_http://transport.data.gov.uk/def/naptan/BusStop" target="nid_http://transport.data.gov.uk/def/naptan/OnStreetStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -700,7 +828,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf26" source="nid_http://transport.data.gov.uk/def/naptan/BusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusCoachStopPoint">
+    <edge id="eid_rdfs:subClassOf30" source="nid_http://transport.data.gov.uk/def/naptan/BusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusCoachStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -723,7 +851,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf27" source="nid_http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
+    <edge id="eid_rdfs:subClassOf31" source="nid_http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -746,7 +874,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf28" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
+    <edge id="eid_rdfs:subClassOf32" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro" target="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -757,7 +885,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf29" source="nid_http://transport.data.gov.uk/def/naptan/OnStreetStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/StopPoint">
+    <edge id="eid_rdfs:subClassOf33" source="nid_http://transport.data.gov.uk/def/naptan/OnStreetStopPoint" target="nid_http://transport.data.gov.uk/def/naptan/StopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -780,7 +908,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf30" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" target="nid_http://transport.data.gov.uk/def/naptan/OnStreetStopPoint">
+    <edge id="eid_rdfs:subClassOf34" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" target="nid_http://transport.data.gov.uk/def/naptan/OnStreetStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -791,7 +919,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf31" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" target="nid_http://transport.data.gov.uk/def/naptan/BusCoachStopPoint">
+    <edge id="eid_rdfs:subClassOf35" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena" target="nid_http://transport.data.gov.uk/def/naptan/BusCoachStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -814,7 +942,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf32" source="nid_http://transport.data.gov.uk/def/naptan/RailStationEntrance" target="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
+    <edge id="eid_rdfs:subClassOf36" source="nid_http://transport.data.gov.uk/def/naptan/RailStationEntrance" target="nid_http://transport.data.gov.uk/def/naptan/RailStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -837,7 +965,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf33" source="nid_http://www.opengis.net/ont/geosparql#Geometry" target="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
+    <edge id="eid_rdfs:subClassOf37" source="nid_http://www.opengis.net/ont/geosparql#Geometry" target="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="930.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf38" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge" target="nid_sosa:ObservableProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -860,7 +1011,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf34" source="nid_http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
+    <edge id="eid_rdfs:subClassOf39" source="nid_http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -883,19 +1034,7 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_sosa:Sensor">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sosa:Sensor</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf35" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint" target="nid_sosa:Sensor">
+    <edge id="eid_rdfs:subClassOf40" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#DPayPoint" target="nid_sosa:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -918,7 +1057,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf36" source="nid_http://transport.data.gov.uk/def/naptan/MarkedBusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
+    <edge id="eid_rdfs:subClassOf41" source="nid_http://transport.data.gov.uk/def/naptan/MarkedBusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -941,7 +1080,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf37" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
+    <edge id="eid_rdfs:subClassOf42" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro" target="nid_http://transport.data.gov.uk/def/naptan/MetroStopPoint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -964,7 +1103,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf38" source="nid_sosa:ObservableProperty" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf43" source="nid_sosa:ObservableProperty" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -987,7 +1126,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf39" source="nid_http://transport.data.gov.uk/def/naptan/HailAndRideBusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
+    <edge id="eid_rdfs:subClassOf44" source="nid_http://transport.data.gov.uk/def/naptan/HailAndRideBusStop" target="nid_http://transport.data.gov.uk/def/naptan/BusStop">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1010,19 +1149,7 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_sosa:Result">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sosa:Result</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf40" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult" target="nid_sosa:Result">
+    <edge id="eid_rdfs:subClassOf45" source="nid_http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult" target="nid_sosa:Result">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1045,7 +1172,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf41" source="nid_sosa:ActuatableProperty" target="nid_http://www.w3.org/ns/ssn/Property">
+    <edge id="eid_rdfs:subClassOf46" source="nid_sosa:ActuatableProperty" target="nid_http://www.w3.org/ns/ssn/Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1056,7 +1183,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf42" source="nid_http://www.opengis.net/ont/sf#Geometry" target="nid_http://www.opengis.net/ont/geosparql#Geometry">
+    <edge id="eid_rdfs:subClassOf47" source="nid_http://www.opengis.net/ont/sf#Geometry" target="nid_http://www.opengis.net/ont/geosparql#Geometry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
