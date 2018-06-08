@@ -8,9 +8,6 @@
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada",
       "@type" : "@id"
     },
-    "CardChargeResult" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult"
-    },
     "paradaEnIntercambiador" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador",
       "@type" : "@id"
@@ -86,6 +83,9 @@
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CardReloadObservation" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation"
     },
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -183,6 +183,9 @@
     "HailAndRideBusStop" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/HailAndRideBusStop"
     },
+    "CardReload" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload"
+    },
     "address" : {
       "@id" : "http://schema.org/address",
       "@type" : "@id"
@@ -209,9 +212,6 @@
     },
     "PostalAddress" : {
       "@id" : "http://schema.org/PostalAddress"
-    },
-    "CardChargeObservation" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation"
     },
     "MetroStopPoint" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/MetroStopPoint"
@@ -261,9 +261,6 @@
     },
     "RailAccessArea" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/RailAccessArea"
-    },
-    "CardCharge" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge"
     },
     "StopArea" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/StopArea"
@@ -334,6 +331,9 @@
     },
     "LineaBus" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus"
+    },
+    "CardReloadResult" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult"
     },
     "dimension" : {
       "@id" : "http://www.opengis.net/ont/geosparql#dimension"
