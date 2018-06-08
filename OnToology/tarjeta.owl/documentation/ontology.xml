@@ -426,8 +426,8 @@
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile">
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="es">Perfil de usuario de la tarjeta (normal, joven, tercera edad, etc.) Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil</rdfs:comment>
-        <rdfs:comment xml:lang="en">User&apos;s profile. It is represented by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil</rdfs:comment>
+        <rdfs:comment xml:lang="es">Perfil de usuario de la tarjeta (normal, joven, tercera edad, etc.) Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil-usuario</rdfs:comment>
+        <rdfs:comment xml:lang="en">User&apos;s profile. It is represented by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil-usuario</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta"/>
         <rdfs:label xml:lang="es">perfil</rdfs:label>
         <rdfs:label xml:lang="en">profile</rdfs:label>
@@ -1039,7 +1039,6 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion</rdfs:co
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador">
         <rdfs:comment rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
         <rdfs:comment xml:lang="es">Operador de los medios de transporte</rdfs:comment>
-        <rdfs:comment xml:lang="es">Operador de los medios de transporte.</rdfs:comment>
         <rdfs:label xml:lang="es">Operador</rdfs:label>
     </owl:Class>
     
@@ -1106,43 +1105,43 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion</rdfs:co
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge">
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:comment xml:lang="en">Card charge at the sale point.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Carga de la tarjeta en el punto de venta.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Card reload at the sale point.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Recarga de la tarjeta en el punto de venta.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta"/>
-        <rdfs:label xml:lang="en">Card charge</rdfs:label>
-        <rdfs:label xml:lang="es">Carga de la tarjeta</rdfs:label>
+        <rdfs:label xml:lang="en">Card reload</rdfs:label>
+        <rdfs:label xml:lang="es">Recarga de la tarjeta</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation">
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:comment xml:lang="en">Card charge observation of the transport card.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Card reload observation of the transport card.</rdfs:comment>
         <rdfs:comment xml:lang="es">Observación de la carga de la tarjeta del sistema de transporte.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta"/>
-        <rdfs:label xml:lang="en">Card charge observation</rdfs:label>
-        <rdfs:label xml:lang="es">Observación de la carga de la tarjeta</rdfs:label>
+        <rdfs:label xml:lang="en">Card reload observation</rdfs:label>
+        <rdfs:label xml:lang="es">Observación de la recarga de la tarjeta</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult">
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Result"/>
-        <rdfs:comment xml:lang="en">Result of the transport card charge</rdfs:comment>
+        <rdfs:comment xml:lang="en">Result of the transport card reload</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/tarjeta"/>
-        <rdfs:label xml:lang="en">Card charge result</rdfs:label>
-        <rdfs:label xml:lang="es">Resultado de la carga de tarjeta</rdfs:label>
+        <rdfs:label xml:lang="en">Card reload result</rdfs:label>
+        <rdfs:label xml:lang="es">Resultado de la recarga de tarjeta</rdfs:label>
     </owl:Class>
     
 

@@ -265,8 +265,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile
 :profile rdf:type owl:ObjectProperty ;
          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-         rdfs:comment "Perfil de usuario de la tarjeta (normal, joven, tercera edad, etc.) Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil"@es ,
-                      "User's profile. It is represented by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil"@en ;
+         rdfs:comment "Perfil de usuario de la tarjeta (normal, joven, tercera edad, etc.) Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil-usuario"@es ,
+                      "User's profile. It is represented by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil-usuario"@en ;
          rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
          rdfs:label "perfil"@es ,
                     "profile"@en .
@@ -663,8 +663,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion"""@en ;
 ###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> rdf:type owl:Class ;
                                                                                       rdfs:comment <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ,
-                                                                                                   "Operador de los medios de transporte"@es ,
-                                                                                                   "Operador de los medios de transporte."@es ;
+                                                                                                   "Operador de los medios de transporte"@es ;
                                                                                       rdfs:label "Operador"@es .
 
 
@@ -705,33 +704,33 @@ http://vocab.linkeddata.es/datosabiertos/kos/transporte/tipo-validacion"""@en ;
                  "Transport Card"@en .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge
-:CardCharge rdf:type owl:Class ;
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload
+:CardReload rdf:type owl:Class ;
             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
-            rdfs:comment "Card charge at the sale point."@en ,
-                         "Carga de la tarjeta en el punto de venta."@es ;
+            rdfs:comment "Card reload at the sale point."@en ,
+                         "Recarga de la tarjeta en el punto de venta."@es ;
             rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
-            rdfs:label "Card charge"@en ,
-                       "Carga de la tarjeta"@es .
+            rdfs:label "Card reload"@en ,
+                       "Recarga de la tarjeta"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation
-:CardChargeObservation rdf:type owl:Class ;
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation
+:CardReloadObservation rdf:type owl:Class ;
                        rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
-                       rdfs:comment "Card charge observation of the transport card."@en ,
+                       rdfs:comment "Card reload observation of the transport card."@en ,
                                     "Observación de la carga de la tarjeta del sistema de transporte."@es ;
                        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> ;
-                       rdfs:label "Card charge observation"@en ,
-                                  "Observación de la carga de la tarjeta"@es .
+                       rdfs:label "Card reload observation"@en ,
+                                  "Observación de la recarga de la tarjeta"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult
-:CardChargeResult rdf:type owl:Class ;
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult
+:CardReloadResult rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.w3.org/ns/sosa/Result> ;
-                  rdfs:comment "Result of the transport card charge"@en ;
+                  rdfs:comment "Result of the transport card reload"@en ;
                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/tarjeta> ;
-                  rdfs:label "Card charge result"@en ,
-                             "Resultado de la carga de tarjeta"@es .
+                  rdfs:label "Card reload result"@en ,
+                             "Resultado de la recarga de tarjeta"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult

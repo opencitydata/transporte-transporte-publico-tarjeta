@@ -252,8 +252,8 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#comment> "Perfil de usuario de la tarjeta (normal, joven, tercera edad, etc.) Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#comment> "User's profile. It is represented by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#comment> "Perfil de usuario de la tarjeta (normal, joven, tercera edad, etc.) Se representa mediante el esquema de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil-usuario"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#comment> "User's profile. It is represented by the concept scheme: http://vocab.linkeddata.es/datosabiertos/kos/transporte/perfil-usuario"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#label> "perfil"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#profile> <http://www.w3.org/2000/01/rdf-schema#label> "profile"@en .
@@ -586,7 +586,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> "Operador de los medios de transporte"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> "Operador de los medios de transporte."@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#label> "Operador"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias
@@ -620,31 +619,31 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card> <http://www.w3.org/2000/01/rdf-schema#label> "Tarjeta de transporte"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#Card> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Card"@en .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#comment> "Card charge at the sale point."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#comment> "Carga de la tarjeta en el punto de venta."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#label> "Card charge"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardCharge> <http://www.w3.org/2000/01/rdf-schema#label> "Carga de la tarjeta"@es .
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload> <http://www.w3.org/2000/01/rdf-schema#comment> "Card reload at the sale point."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload> <http://www.w3.org/2000/01/rdf-schema#comment> "Recarga de la tarjeta en el punto de venta."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload> <http://www.w3.org/2000/01/rdf-schema#label> "Card reload"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReload> <http://www.w3.org/2000/01/rdf-schema#label> "Recarga de la tarjeta"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Card charge observation of the transport card."@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observaci\u00F3n de la carga de la tarjeta del sistema de transporte."@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Card charge observation"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Observaci\u00F3n de la carga de la tarjeta"@es .
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Card reload observation of the transport card."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observaci\u00F3n de la carga de la tarjeta del sistema de transporte."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Card reload observation"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Observaci\u00F3n de la recarga de la tarjeta"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Result> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Result of the transport card charge"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/tarjeta> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#label> "Card charge result"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardChargeResult> <http://www.w3.org/2000/01/rdf-schema#label> "Resultado de la carga de tarjeta"@es .
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Result> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Result of the transport card reload"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/tarjeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult> <http://www.w3.org/2000/01/rdf-schema#label> "Card reload result"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardReloadResult> <http://www.w3.org/2000/01/rdf-schema#label> "Resultado de la recarga de tarjeta"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta#CardValidacionResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
