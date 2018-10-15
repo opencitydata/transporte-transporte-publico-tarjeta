@@ -1,5 +1,5 @@
 # transporte-transporte-publico-tarjeta
-Repositorio que contiene el material relacionado con el vocabulario que permite representar los datos asociados a la tarjeta del sistema de transporte de Madrid. Este vocabulario se encuentra publicado en la siguiente URI:
+Repositorio que contiene el material relacionado con el vocabulario que permite representar los datos asociados a la tarjeta de transporte del sistema de transporte de Madrid. Este vocabulario se encuentra publicado en la siguiente URI:
 
 http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico/tarjeta
 
